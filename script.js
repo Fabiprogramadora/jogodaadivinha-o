@@ -11,7 +11,7 @@ function gerarnumeroAleatorio(){
 }
 function verificarPalpite(palpite){
     return new promise((resolve,reject) =>{
-        tentativas++;
+        tentativa++;
         if(palpite < 1 || palpite > 100){
             reject("Por favor digite um número de 1 a 100");
         }else if(palpite === numeroSecreto){
